@@ -3,5 +3,9 @@ h1 {
 }
 
 ul {
-    color: orange;
+    color: white;
+}
+
+#idList {
+    background-color: Tomato;
 }
