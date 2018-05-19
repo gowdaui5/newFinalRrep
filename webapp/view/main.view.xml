@@ -7,13 +7,42 @@
 					<form:SimpleForm>
 						<form:content>
 							<Label text="ID"></Label>
-							<Input width="75px"></Input>
+							<Input width="75px" value="{/empDetails/empId}" enabled="{/empDetails/enable}"></Input>
 							<Label text="Employee Name"></Label>
-							<Input width="300px"></Input>
-							<Label text="Destination"></Label>
-							<Input width="300px"></Input>
+							<Input width="300px" value="{/empDetails/empName}" enabled="{/empDetails/enable}"></Input>
+							<Label text=" Destination"></Label>
+							<Input width="300px" value="{/empDetails/empDest}" enabled="{/empDetails/enable}"></Input>
+							<Button text=" Press me to disable input fields" press="onPress"></Button>
+							<Button text="ChangeFileData" press="onChange"></Button>
 						</form:content>
 					</form:SimpleForm>
+					<Text id="idTxt"></Text>
+					<Table items="{/empTab}">
+						<columns>
+							<Column>
+								<header>
+									<Label text="Employee ID"></Label>
+								</header>
+							</Column>
+							<Column>
+								<header>
+									<Label text="Employee Name"></Label>
+								</header>
+							</Column>
+							<Column>
+								<header>
+									<Label text="Destination"></Label>
+								</header>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<Text text="{empId}"></Text>
+								<Input value="{empName}"></Input>
+								<Text text="{empDest}"></Text>
+							</ColumnListItem>
+						</items>
+					</Table>
 				</content>
 			</Page>
 		</pages>

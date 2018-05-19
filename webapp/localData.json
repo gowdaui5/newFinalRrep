@@ -1,0 +1,25 @@
+{
+	"empDetails": {
+		"empName": "Srinivas",
+		"empId": 200,
+		"empDest": "SAP UI5 Consultant",
+		"enable": false
+	},
+	"empTab": [{
+		"empName": "Srinivas",
+		"empId": 200,
+		"empDest": "SAP UI5 Consultant"
+	}, {
+		"empName": "Praneeth",
+		"empId": 250,
+		"empDest": "Robotic Engineer"
+	}, {
+		"empName": "Gururaj Renja",
+		"empId": 300,
+		"empDest": "Interior Design"
+	}, {
+		"empName": "Ajay",
+		"empId": 222,
+		"empDest": "Quality Consultant"
+	}]
+}
