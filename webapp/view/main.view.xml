@@ -2,7 +2,7 @@
 	controllerName="cm.controller.main" xmlns:html="http://www.w3.org/1999/xhtml">
 	<App>
 		<pages>
-			<Page title="Web Application">
+			<Page title="Web Application" showNavButton="{device>/system/phone}">
 				<content>
 					<form:SimpleForm>
 						<form:content>

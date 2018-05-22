@@ -1,6 +1,8 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function(Controller) {
+	"sap/ui/core/mvc/Controller",
+	"sap/ui/Device",
+	"sap/ui/model/json/JSONModel"
+], function(Controller, Device, JSONModel) {
 	"use strict";
 
 	return Controller.extend("cm.controller.main", {
@@ -11,9 +13,12 @@ sap.ui.define([
 		 * @memberOf view.main
 		 */
 		onInit: function() {
-			var oModel = new sap.ui.model.json.JSONModel();
+			var oModel = new JSONModel();
 			oModel.loadData("localData.json");
 			sap.ui.getCore().setModel(oModel);
+
+			var oDevice = new JSONModel(Device);
+			sap.ui.getCore().setModel(oDevice, "device");
 		},
 		onPress: function() {
 			var oMod = this.getView().getModel();
